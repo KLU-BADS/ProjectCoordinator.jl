@@ -1,0 +1,39 @@
+# One course, one cohort.
+#
+# Everything not named here comes from defaults.toml. To set up next year, copy
+# this directory and change the cohort.
+
+course = "scientific-programming"
+cohort = "2026"
+
+# The milestones of the course, one per deliverable.
+#
+# `deadline` is a local date and time, written without quotes so that it is a
+# date-time rather than a string. It decides two things: the date GitHub shows
+# on the milestone, and which commit the report links to -- the last one on
+# `main` before that moment.
+#
+# The description may use Markdown, which GitHub renders on the milestone page.
+# The coordinator puts the deadline at the top of it, because GitHub's own due
+# date carries no time.
+[[milestone]]
+title       = "M1 - Group formation"
+deadline    = 2026-09-16T00:00:00
+description = """
+- [ ] Every group member has joined the organisation on GitHub
+- [ ] Every group member has opened a pull request adding their own name and
+      email address to the `authors` list in `Project.toml`
+- [ ] The milestone has been closed (after completing above)
+"""
+
+[[milestone]]
+title       = "M2 - Project plan"
+deadline    = 2026-09-23T00:00:00
+description = """
+Everything contributing to this milestone must be on `main`, merged through
+pull requests.
+
+- [ ] `Project.toml` names every group member
+- [ ] `README.md` describes the purpose of the project
+- [ ] The milestone has been closed (after completing above)
+"""

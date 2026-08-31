@@ -1,8 +1,8 @@
 # Settings shared by every course.
 #
-# A course file next to this one is merged onto these values, so anything
-# that is the same year after year is written here once. Change these and
-# every course follows.
+# A course file under courses/ is merged onto these values, so anything that is
+# the same year after year is written here once. Change these and every course
+# follows.
 
 # The account teams and repositories are created under.
 owner = "KLU-BADS"
@@ -11,8 +11,8 @@ owner = "KLU-BADS"
 # your university's GitHub Enterprise Server if you are not on github.com.
 # hostname = "github.example.edu"
 
-# The repository each group's project is copied from. It must be marked as a
-# template repository on GitHub.
+# The repository each group's project is copied from. It is cloned, so it needs
+# no flag on GitHub -- an ordinary repository will do.
 template = "KLU-BADS/ProjectTemplate.jl"
 
 # How things are named.

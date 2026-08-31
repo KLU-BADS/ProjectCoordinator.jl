@@ -1,0 +1,7 @@
+# One email address per line. Blank lines and lines starting with # are ignored.
+#
+# "Send invitations" invites everybody here who has no invitation outstanding,
+# so adding a line and running it again invites only the new person.
+
+ada.lovelace@example.edu
+alan.turing@example.edu
