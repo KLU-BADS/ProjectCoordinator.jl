@@ -1,0 +1,9 @@
+# Julia
+Manifest.toml
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+
+# Editors / OS
+.vscode/
+.DS_Store

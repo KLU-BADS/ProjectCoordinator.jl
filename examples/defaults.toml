@@ -1,0 +1,51 @@
+# Settings shared by every course.
+#
+# A course file next to this one is merged onto these values, so anything
+# that is the same year after year is written here once. Change these and
+# every course follows.
+
+# The account teams and repositories are created under.
+owner = "KLU-BADS"
+
+# The GitHub host. Leave this out for github.com; set it to the hostname of
+# your university's GitHub Enterprise Server if you are not on github.com.
+# hostname = "github.example.edu"
+
+# The repository each group's project is copied from. It must be marked as a
+# template repository on GitHub.
+template = "KLU-BADS/ProjectTemplate.jl"
+
+# How things are named.
+#
+# Team and repository names are unique across the whole organisation -- putting
+# a team inside another does not give it a namespace -- so every name carries
+# the course and the cohort.
+#
+# GitHub has no notion of a group. `group_id` is the identifier we give a
+# group; it is sent as the team name and appears in the team's URL. It is not
+# GitHub's numeric team id.
+#
+# Placeholders: {course} {cohort} {n} = group number, {n2} = padded to two digits.
+[naming]
+parent_team = "{course}-{cohort}"
+group_id    = "group-{n}-{course}-{cohort}"
+repo        = "project-{n}-{course}-{cohort}"
+
+# The Julia package inside each repository. The coordinator rewrites the
+# generated repository to this name before the students ever see it. It must
+# be a valid Julia identifier -- a capital letter, then letters and digits --
+# so {course} and {cohort} cannot be used here: they contain hyphens.
+package     = "Project{n}"
+
+[repos]
+# Public because GitHub Pages on a private repository needs a paid plan. It
+# also means unlimited Actions minutes.
+visibility = "public"
+
+# Documentation is published by the workflow in the template, not from a
+# gh-pages branch.
+pages = "workflow"
+
+# What students get on their own repository. Never "admin": that would let
+# them delete it, or remove the branch protection.
+permission = "push"

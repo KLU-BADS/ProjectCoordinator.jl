@@ -1,0 +1,18 @@
+name = "ProjectCoordinator"
+uuid = "112b7281-cf88-4048-a001-5fbd11e65613"
+authors = ["Asvin Goel <asvin.goel@klu.org>"]
+version = "0.1.0"
+
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[compat]
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
